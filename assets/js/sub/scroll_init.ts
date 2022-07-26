@@ -3,7 +3,13 @@ export default function scroll_init() {
     // Site Header
     let siteHeader = document.querySelector("[data-site_header]");
     let scrollPosition = window.scrollY;
-    if (scrollPosition >= 30) siteHeader.classList.add("scrolled");
-    else siteHeader.classList.remove("scrolled");
+    let scrollIcon = document.querySelector("[data-scroll_icon]");
+    if (scrollPosition >= 100) {
+      siteHeader.classList.add("scrolled");
+      if (scrollIcon) scrollIcon.classList.add("opacity-0");
+    } else {
+      if (scrollIcon) scrollIcon.classList.remove("opacity-0");
+      siteHeader.classList.remove("scrolled");
+    }
   });
 }

@@ -21,6 +21,32 @@
   background: #f1f1f1;
 }
 
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-14px);
+  }
+  60% {
+    -webkit-transform: translateY(-7px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-14px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}
+.bounce {
+  animation: bounce 2s infinite 0.5s;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
