@@ -17,4 +17,22 @@
         hover:text-dark 
         transition-all;
     }
+    .btn-yellow{
+        @apply
+        block
+        w-fit
+        rounded-full
+        px-10 py-4
+        font-bold
+        text-dark
+        bg-yellow
+        uppercase
+        text-sm
+        hover:bg-yellow-dark
+        hover:-translate-y-1
+        focus:translate-y-0
+        hover:shadow-md
+        focus:shadow-none
+        transition-all
+    }
 }
