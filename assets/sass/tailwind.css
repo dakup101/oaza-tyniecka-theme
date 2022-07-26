@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .btn-white{
+        @apply 
+        text-white border 
+        border-white 
+        flex items-center 
+        justify-center 
+        px-10 
+        py-4 
+        hover:cursor-pointer 
+        hover:bg-yellow 
+        hover:border-yellow 
+        hover:text-dark 
+        transition-all;
+    }
+}

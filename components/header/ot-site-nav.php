@@ -1,4 +1,4 @@
-<div class="site-nav grid grid-cols-12 bg-dark items-center">
+<div class="site-nav grid grid-cols-12 items-center py-5">
     <nav class="col-span-5 justify-self-end mb-7" aria-label="Main left">
         <?php echo get_template_part( '/components/ot-menu-items', null, array(
             'menu'=>'primary-left',
@@ -6,7 +6,7 @@
         ) ) ?>
     </nav>
     <figure class="col-span-2 px-10">
-        <img src="<?php echo THEME_IMG . '/logo.png' ?>" alt="" class="w-full">
+        <img src="<?php echo THEME_IMG . '/logo.svg' ?>" alt="" class="w-full">
     </figure>
     <nav class="col-span-5 justify-self-start items-center mb-7 flex" aria-label="Main right">
         <?php echo get_template_part( '/components/ot-menu-items', null, array(
