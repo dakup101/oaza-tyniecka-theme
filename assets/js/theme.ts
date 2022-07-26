@@ -1,17 +1,9 @@
 //Loaded
-import SimpleParallax from "simple-parallax-js";
+console.log("--- Loaded ---");
+import handleParallax from "./sub/handle-parallax";
 
 //Rendered
 window.addEventListener("DOMContentLoaded", () => {
-  parallaxInit(".parallax");
+  console.log("--- Rendered ---");
+  handleParallax();
 });
-
-function parallaxInit(selector) {
-  const parallaxTarget = document.querySelectorAll(selector);
-  parallaxTarget.forEach((target) => {
-    const parallax = new SimpleParallax(target, {
-      delay: 0.5,
-      transition: "cubic-bezier(0,0,0,1)",
-    });
-  });
-}
