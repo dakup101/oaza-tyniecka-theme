@@ -6,7 +6,7 @@
     <div class="absolute w-full h-full top-0 left-0 overlay-bg"></div>
     <!-- Content -->
     <div class="absolute w-full h-full top-0 left-0 flex flex-col items-center justify-center text-white">
-        <h1 class="text-9xl font-medium">
+        <h1 class="text-9xl text-center">
             Lorem & Ipsum
         </h1>
         <p class="text-center text-4xl my-14">
