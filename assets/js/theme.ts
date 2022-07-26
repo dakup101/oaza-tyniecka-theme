@@ -1,9 +1,11 @@
 //Loaded
 console.log("--- Loaded ---");
-import handleParallax from "./sub/handle-parallax";
+import parallax_handle from "./sub/parallax_handle";
+import scroll_handle from "./sub/scroll_handle";
 
 //Rendered
 window.addEventListener("DOMContentLoaded", () => {
   console.log("--- Rendered ---");
-  handleParallax();
+  parallax_handle();
+  scroll_handle();
 });

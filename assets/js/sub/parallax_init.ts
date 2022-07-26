@@ -1,6 +1,6 @@
 import SimpleParallax from "simple-parallax-js";
 
-export default function initParallax(selector) {
+export default function parallax_init(selector) {
   const parallaxTarget = document.querySelectorAll(selector);
   parallaxTarget.forEach((target) => {
     const parallax = new SimpleParallax(target, {

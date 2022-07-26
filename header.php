@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="fixed top-0 left-0 w-full z-50">
+    <header class="fixed top-0 left-0 w-full z-50" data-site_header>
         <div class="container px-0 mx-auto">
             <?php echo get_template_part( '/components/header/ot-site-nav' ) ?>
         </div>

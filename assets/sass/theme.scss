@@ -38,3 +38,23 @@ header{
 .overlay-bg{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 25.00%, rgba(0, 0, 0, 0.3) 75.00%, rgba(0, 0, 0, 0.7) 100%);
 }
+
+header{
+    transition: all .3s ease-in-out;
+    & img, & nav{
+        transition: all .3s ease-in-out;
+    }
+    & img{
+        height: 90px;
+    }
+    &.scrolled{
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(15px);
+        &  img{
+            height: 50px;
+        }
+        & nav{
+            margin-bottom: .5rem;
+        }
+    }
+}
