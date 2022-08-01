@@ -18,9 +18,11 @@ module.exports = {
             'current' : 'currentColor',
             'yellow' : '#e4e84c',
             'yellow-dark' : '#cece25',
+            'yellow-darker' : '#BCB820',
             'yellow-light' : '#f1f3a5',
             'gray' : '#e5e0db',
-            'light-gray' : '#f1f1f1',
+            'gray-light' : '#f1f1f1',
+            'gray-lighter' : '#fafafa',
             'red' : '#f84444'
         },
         screens: {

@@ -33,6 +33,8 @@
         focus:translate-y-0
         hover:shadow-md
         focus:shadow-none
+        focus:bg-yellow
+        focus:text-yellow-darker
         transition-all
     }
 }

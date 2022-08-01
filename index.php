@@ -14,5 +14,13 @@
             <?php get_template_part( '/components/ot', 'yellow-icons' ) ?>
         </div>
     </section>
+    <section class="overflow-hidden mt-20">
+        <div class="container pb-10 mx-auto">
+            <?php get_template_part( '/components/ot', 'right-img-section' ) ?>
+        </div>
+    </section>
+    <section class="container mx-auto">
+        <?php get_template_part( '/components/ot', 'map' ) ?>
+    </section>
 </main>
 <?php get_footer(); ?>

@@ -47,6 +47,29 @@
   animation: bounce 2s infinite 0.5s;
 }
 
+.img-right {
+  width: calc(50% + 2rem);
+}
+
+.right-space {
+  width: 2rem;
+  right: 50%;
+  transform: translateX(calc(100% + 2rem));
+}
+.right-space > div {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-space {
+  height: 2rem;
+  bottom: -2rem;
+}
+.bottom-space > div {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -100,6 +123,10 @@ header.scrolled img {
 }
 header.scrolled nav {
   margin-bottom: 0.5rem;
+}
+
+.map {
+  height: 650px;
 }
 
 /*# sourceMappingURL=theme.css.map */

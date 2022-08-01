@@ -1,7 +1,8 @@
 <div class="w-full h-screen relative overflow-hidden hero-shadow">
     <!-- Parallax -->
     <img src="<?php echo THEME_IMG . '/hero.jpg' ?>" alt="Oaza Tyniecka - mieszkania w nowych domach"
-        class="parallax h-full w-auto">
+        class="parallax h-full w-auto" data-scale="1.3" data-transition="cubic-bezier(0,0,0,1)" data-orientation="up"
+        data-delay="0.5">
     <!-- Overlay -->
     <div class="absolute w-full h-full top-0 left-0 overlay-bg"></div>
     <!-- Content -->

@@ -1,0 +1,23 @@
+.img-right{
+    width: calc(50% + 2rem);
+}
+
+$space-sizes: 2rem;
+
+.right-space{
+    width: $space-sizes;
+    right: 50%;
+    transform: translateX(calc(100% + $space-sizes));
+    & > div{
+        width: 100%;
+        height: 100%;
+    }
+}
+.bottom-space{
+    height: $space-sizes;
+    bottom: -$space-sizes;
+    & > div{
+        width: 100%;
+        height: 100%;
+    }
+}

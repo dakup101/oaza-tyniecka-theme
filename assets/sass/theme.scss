@@ -2,6 +2,7 @@
 @import './sub/variables';
 @import './sub/custom-scroll-bar';
 @import './sub/bounce-animation';
+@import './sub/img-right';
 *{
     font-family: 'Roboto', sans-serif;
 }
@@ -58,4 +59,8 @@ header{
             margin-bottom: .5rem;
         }
     }
+}
+
+.map{
+    height: 650px;
 }
