@@ -31,9 +31,10 @@ function theme_functions(){
 	require THEME_FUN . '/wp-menu-array.php';
 	// Register "Apartaments" WP Post type
 	require THEME_FUN . '/post-type-apartaments.php';
+	// Register "Locations" WP Post type
+	require THEME_FUN . '/post-type-locations.php';
 	// Register "Building" taxonomy for "Apartaments" WP Post type
 	require THEME_FUN . '/taxonomy-building.php';
 	// ACF Options Page + Subpages
 	require THEME_FUN . '/php-acf-options-page.php';
-	
 }
