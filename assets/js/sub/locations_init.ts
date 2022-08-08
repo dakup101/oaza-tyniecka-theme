@@ -20,7 +20,7 @@ export default function locations_init() {
       locations.forEach((el) => {
         el.classList.remove("active-location");
       });
-      mapLoader.classList.remove("hidden");
+      mapLoader.classList.remove("not-active");
       let target = e.currentTarget as HTMLAnchorElement;
       target.classList.add("active-location");
       let locID = target.dataset.location_id;
@@ -50,7 +50,7 @@ export function manage_locations(locations) {
       icon: locationIcon,
     }).addTo(markerGroup);
     marker.bindPopup(popupString);
-    mapLoader.classList.add("hidden");
+    mapLoader.classList.add("not-active");
   });
 }
 
