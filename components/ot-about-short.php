@@ -1,6 +1,6 @@
 <div class="grid grid-cols-2">
     <div>
-        <h2 class="text-7xl">Nasza inwestycja</h2>
+        <h2 class="text-7xl font-bold">Nasza inwestycja</h2>
         <span class="block text-4xl">Poznaj więcej detali</span>
     </div>
     <div>

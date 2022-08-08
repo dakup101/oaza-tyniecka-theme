@@ -35,6 +35,10 @@
         focus:shadow-none
         focus:bg-yellow
         focus:text-yellow-darker
-        transition-all
+        transition-all;
+    }
+    .active-location{
+        @apply
+        text-yellow;
     }
 }

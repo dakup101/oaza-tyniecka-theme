@@ -37,4 +37,6 @@ function theme_functions(){
 	require THEME_FUN . '/taxonomy-building.php';
 	// ACF Options Page + Subpages
 	require THEME_FUN . '/php-acf-options-page.php';
+	// AJAX fetch locations
+	require THEME_FUN . '/php-ajax-locations.php';
 }

@@ -19,7 +19,7 @@
             <?php get_template_part( '/components/ot', 'right-img-section' ) ?>
         </div>
     </section>
-    <section class="container mx-auto">
+    <section class="container  mt-20 mx-auto">
         <?php get_template_part( '/components/ot', 'map' ) ?>
     </section>
 </main>
