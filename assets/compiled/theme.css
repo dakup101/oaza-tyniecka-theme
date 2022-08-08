@@ -129,4 +129,13 @@ header.scrolled nav {
   height: 650px;
 }
 
+.map__loader {
+  z-index: 1000;
+  transition: all 0.2s ease-in-out;
+}
+.map__loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /*# sourceMappingURL=theme.css.map */

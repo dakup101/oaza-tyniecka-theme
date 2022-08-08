@@ -808,6 +808,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -982,8 +986,24 @@ video {
   background-color: rgb(241 243 165 / var(--tw-bg-opacity));
 }
 
+.bg-white\/30 {
+  background-color: rgb(255 255 255 / 0.3);
+}
+
+.bg-white\/60 {
+  background-color: rgb(255 255 255 / 0.6);
+}
+
+.bg-white\/70 {
+  background-color: rgb(255 255 255 / 0.7);
+}
+
 .fill-current {
   fill: currentColor;
+}
+
+.fill-yellow {
+  fill: #e4e84c;
 }
 
 .p-20 {
