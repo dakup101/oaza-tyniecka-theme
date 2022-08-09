@@ -22,5 +22,11 @@
     <section class="container  mt-20 mx-auto">
         <?php get_template_part( '/components/ot', 'map' ) ?>
     </section>
+    <section class="container mx-auto py-10 mt-10">
+        <h2 class="text-4xl font-bold text-center mb-14">Wszędzie blisko</h2>
+        <div class="grid grid-cols-6">
+            <?php get_template_part( '/components/ot', 'path-icons' ) ?>
+        </div>
+    </section>
 </main>
 <?php get_footer(); ?>
