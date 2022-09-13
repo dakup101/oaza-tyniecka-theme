@@ -23,4 +23,10 @@ export default function site_overlay_init() {
 	siteOverlay.addEventListener("mouseout", () => {
 		info.style.opacity = "0";
 	});
+
+	document
+		.querySelector(".lightbox__popup--close")
+		.addEventListener("click", (e) => {
+			(siteOverlay as HTMLElement).click();
+		});
 }
