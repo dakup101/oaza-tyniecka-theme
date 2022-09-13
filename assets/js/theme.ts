@@ -8,6 +8,11 @@ import apartamentsHandle from "./sub/apartaments_handle";
 import apartaments_style_handle from "./sub/apartaments_style_handle";
 import search_handle from "./sub/search_handle";
 import diary_handle from "./sub/diary_swiper_handle";
+import multi_range_handle from "./sub/multi_range_handle";
+import apartamentsHandle from "./sub/apartaments_handle";
+import apartaments_style_handle from "./sub/apartaments_style_handle";
+import search_handle from "./sub/search_handle";
+import diary_handle from "./sub/diary_swiper_handle";
 import lightbox_init from "./sub/lightbox_init";
 import overlay_init from "./sub/overlay_init";
 

@@ -1,24 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-* {
-  scrollbar-color: #e4e84c #f1f1f1;
-}
+/* Error: expected "{".
+ *   ,
+ * 8 | @import './sub/site_overlay';
+ *   |                             ^
+ *   '
+ *   assets\sass\theme.scss 8:29  root stylesheet */
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #e4e84c;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #cece25;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected \"{\".\a   \2577 \a 8 \2502  @import './sub/site_overlay';\d\a   \2502                              ^\a   \2575 \a   assets\\sass\\theme.scss 8:29  root stylesheet";
 }
 
 @-webkit-keyframes bounce {
