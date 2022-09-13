@@ -3,6 +3,9 @@
 @import './sub/custom-scroll-bar';
 @import './sub/bounce-animation';
 @import './sub/img-right';
+@import './sub/filters';
+@import './sub/site_overlay';
+
 *{
     font-family: 'Roboto', sans-serif;
 }
@@ -15,6 +18,7 @@ header{
         & a{
             position: relative;
             z-index: 1;
+            transition: all .2s ease-in-out;
             &::before{
                 content: '';
                 position: absolute;
@@ -31,6 +35,15 @@ header{
                 color: $white;
                 &::before{
                     transform: translateX(0);
+                }
+            }
+        }
+    }
+    &.header-page{
+        & nav{
+            & a{
+                &:hover{
+                    color: $dark;
                 }
             }
         }
@@ -52,6 +65,9 @@ header{
     &.scrolled{
         background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(15px);
+        &.header-page{
+            background: rgba(255, 255, 255, .9);
+        }
         &  img{
             height: 50px;
         }
@@ -66,11 +82,84 @@ header{
 }
 
 .map{
+    z-index: 1;
     &__loader{
         z-index: 1000;
         &.not-active{
             opacity: 0;
             pointer-events: none;
         }
+    }
+    & .leaflet-tile-pane{
+        filter: grayscale(1);
+    }
+}
+
+.ot-toggle{
+    & > div{
+        width: 75px;
+        height: 35px;
+        border-radius: 1000px;
+        background: $gray-light;
+        position: relative;
+        cursor: pointer;
+        &::after{
+            content: '';
+            border-radius: 100%;
+            border: 10px solid $yellow;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .2s ease-in-out;
+        }
+    }
+    & > input{
+        display: none;
+        &:checked + div{
+            &::after{
+                left: 40px;
+            }
+        }
+    }
+}
+
+.swiper-button-next, .swiper-button-prev{
+    width: fit-content !important;
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    margin-top: 2rem !important;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    display: none !important;
+}
+
+.wpcf7-form-control{
+    width: 100%;
+    margin-bottom: 2rem;
+    
+}
+.wpcf7-form{
+    & textarea{
+        height: 150px;
+    }
+    & textarea, & input{
+        outline: none !important;
+        padding: 7px 15px;
+        border-bottom: 1px solid $dark;
+    }
+    & input[type="submit"]{
+        width: fit-content;
+        background: $dark;
+        border-radius: 1000px;
+        padding: 1rem 3rem;
+        margin-top: 2rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    & input[type="checkbox"]{
+        border-bottom: 0;
     }
 }

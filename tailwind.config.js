@@ -1,10 +1,11 @@
 module.exports = {
     content: [
-        './core/global/*.php',
         './components/*.php',
         './components/**/*.php',
         './assets/js/*.ts',
         './assets/js/**/*.ts',
+        './assets/php/*.php',
+        './assets/php/**/*.php',
         './pages/**/*.php',
         './index.php',
         './footer.php',
