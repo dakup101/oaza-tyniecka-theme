@@ -8,8 +8,9 @@ define('THEME_IMG', trailingslashit(esc_url(get_template_directory_uri().'/asset
 add_filter('use_block_editor_for_post','__return_false');
 // Disable text editor on Pages and Posts
 add_action( 'init', function() {
-	remove_post_type_support( 'post', 'editor' );
+	// remove_post_type_support( 'post', 'editor' );
 	remove_post_type_support( 'page', 'editor' );
+	add_theme_support( 'post-thumbnails' );
 	}, 99);
 // Register Scripts (Assets)
 add_action('wp_enqueue_scripts', 'theme_scripts');
@@ -39,4 +40,10 @@ function theme_functions(){
 	require THEME_FUN . '/php-acf-options-page.php';
 	// AJAX fetch locations
 	require THEME_FUN . '/php-ajax-locations.php';
+	// AJAX fetch apartaments talbe
+	// Apartaments TABLE template
+	require THEME_FUN . '/php-ajax-apartaments-table.php';
+	// AJAX fetch apartaments list
+	// Apartaments LIST template
+	require THEME_FUN . '/php-ajax-apartaments-list.php';
 }

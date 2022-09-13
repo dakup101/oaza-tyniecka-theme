@@ -1,3 +1,5 @@
+<?php /* Template Name: Strona Główna */ ?>
+
 <?php get_header(); ?>
 <main>
     <!-- Hero -->
@@ -48,9 +50,7 @@
         <!-- Apartaments list according to style -->
         <div class="container w-4/5 mx-auto py-5" data-apartaments="list" data-amount="10">
         </div>
-        <a href="#"
-            class="bg-yellow font-bold text-dark text-lg uppercase rounded-full mx-auto px-10 py-3 block w-fit my-5 hover:bg-yellow-dark transition-all"
-            data-filter>
+        <a href="#" class="btn-yellow w-fit mx-auto my-5">
             Zobacz wszystkie
         </a>
     </section>
@@ -59,9 +59,7 @@
         <div class="container mx-auto">
             <h2 class="text-7xl font-bold">Dziennik budowy,</h2>
             <div class="text-4xl mb-5">Zobacz postępy</div>
-            <a href="#"
-                class="bg-yellow text-lg uppercase font-bold text-dark rounded-full px-10 py-3 block w-fit mb-5 hover:bg-yellow-dark transition-all"
-                data-filter>
+            <a href="#" class="btn-yellow  w-fit mb-5" data-filter>
                 zobacz galerię
             </a>
             <?php get_template_part( '/components/ot', 'diary' ) ?>
