@@ -34,8 +34,12 @@ function theme_functions(){
 	require THEME_FUN . '/post-type-apartaments.php';
 	// Register "Locations" WP Post type
 	require THEME_FUN . '/post-type-locations.php';
+	// Register "Gallery Img" WP Post type
+	require THEME_FUN . '/post-type-gallery-img.php';
 	// Register "Building" taxonomy for "Apartaments" WP Post type
 	require THEME_FUN . '/taxonomy-building.php';
+	// Register "Phase" taxonomy for "Apartaments" WP Post type
+	require THEME_FUN . '/taxonomy-phase.php';
 	// ACF Options Page + Subpages
 	require THEME_FUN . '/php-acf-options-page.php';
 	// AJAX fetch locations
@@ -46,4 +50,7 @@ function theme_functions(){
 	// AJAX fetch apartaments list
 	// Apartaments LIST template
 	require THEME_FUN . '/php-ajax-apartaments-list.php';
+	// AJAX fetch gallery images
+	// Gallery Images template
+	require THEME_FUN . '/php-ajax-gallery.php';
 }
