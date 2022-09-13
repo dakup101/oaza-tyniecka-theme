@@ -1,4 +1,4 @@
-<div class="px-20 mb-16">
+<div class="mb-16">
     <h2 class="text-7xl font-bold">Lokalizacja</h2>
     <div class="text-4xl">Oaza Tyniecka daje wytchnienie od miejskiego zgiełku</div>
 </div>
