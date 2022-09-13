@@ -20,10 +20,9 @@ function gallery_images_query($category, $phase, $page) {
 
 <?php
 $args = array(
-    "numberposts"   => 12,
+    "numberposts"   => -1,
     "post_type"     => "gallery_img",
     "status"        => "publish",
-    "paged"         => $page,
     "category_name" => $category,
     "tax_query"     => array(
         array(
@@ -38,16 +37,23 @@ $images = get_posts($args);
 ?>
 
 <?php if (!empty($images)) : ?>
-<?php print_r($images); ?>
-<?php else : ?>
 
-<div class="pt-10 text-center text-2xl font-bold mb-1">
-    Brak zdjęć na tym stanie / etapie
-</div>
-<div class="text-lg pb-10 text-center">
-    Sprawdź pozostałe stany / etapy
+<?php foreach($images as $img) : ?>
+<figure data-lightbox
+    class="cursor-pointer hover:-translate-y-2 hover:shadow-lg transition-all after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-yellow after:opacity-0 after:pointer-events-none hover:after:opacity-30 after:transition-all">
+    <img src="<?php echo get_field('img', $img->ID) ?>" alt="<?php echo $img->post_title ?>">
+</figure>
+<?php endforeach; ?>
+
+<?php else : ?>
+<div class="col-span-3">
+    <div class="pt-10 text-center text-2xl font-bold mb-1">
+        Brak zdjęć na tym stanie / etapie
+    </div>
+    <div class="text-lg pb-10 text-center">
+        Sprawdź pozostałe stany / etapy
+    </div>
 </div>
 <?php endif; ?>
-<?php return ob_get_clean(); ?>
-
-<?php } ?>
+<?php return ob_get_clean(); 
+}

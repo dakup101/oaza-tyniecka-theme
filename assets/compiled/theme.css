@@ -235,6 +235,38 @@ input[type=range]:hover::-webkit-slider-thumb, input[type=range]:hover::-moz-ran
   padding: 3rem;
 }
 
+.gallery-cats {
+  padding: 2.5rem 0;
+}
+.gallery-cats .swiper-button-prev {
+  position: absolute !important;
+  right: calc(100% + 20px) !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin-top: 0 !important;
+}
+.gallery-cats .swiper-button-next {
+  position: absolute !important;
+  left: calc(100% + 20px) !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin-top: 0 !important;
+}
+.gallery-cats .swiper-slide {
+  text-align: center;
+}
+.gallery-cats .swiper-slide-active button {
+  font-size: 2.25rem;
+}
+.gallery-cats .swiper-slide-prev, .gallery-cats .swiper-slide-next {
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+.gallery-cats .swiper-slide-prev:hover, .gallery-cats .swiper-slide-next:hover {
+  opacity: 1;
+  color: #e4e84c;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }

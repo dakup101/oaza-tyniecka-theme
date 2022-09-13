@@ -96,6 +96,5 @@ $apartaments = get_posts($args);
     spróbuj z innymi ustawieniami filtra
 </div>
 <?php endif; ?>
-<?php return ob_get_clean(); ?>
-
-<?php } ?>
+<?php return ob_get_clean(); 
+} 

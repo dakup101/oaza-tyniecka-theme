@@ -13,5 +13,7 @@ export default function diarySwiper() {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
+		centeredSlides: true,
+		centeredSlidesBounds: true,
 	});
 }
