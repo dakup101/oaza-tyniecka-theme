@@ -1,4 +1,4 @@
-import apartametsTablesEvents from "./apartaments_table_events";
+import apartametsTablesEvents from "../sub/apartaments_table_events";
 import { ajaxUrl, htmlLoaderString } from "../globals";
 
 export default async function init_table() {

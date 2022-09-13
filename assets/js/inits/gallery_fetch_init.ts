@@ -1,5 +1,5 @@
 import { ajaxUrl, galleryConfig, htmlLoaderString } from "../globals";
-import lightbox_handle from "./lightbox_handle";
+import lightbox_handle from "../handles/lightbox_handle";
 
 export default async function gallery_fetch_init() {
 	let galleryWrap = document.querySelector("[data-gallery]");

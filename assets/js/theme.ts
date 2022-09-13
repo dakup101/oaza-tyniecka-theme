@@ -6,19 +6,19 @@ import { galleryConfig } from "./globals";
 
 //Loaded
 console.log("--- Loaded ---");
-import parallax_handle from "./sub/parallax_handle";
-import scroll_handle from "./sub/scroll_handle";
-import locations_handle from "./sub/locations_handle";
-import multi_range_handle from "./sub/multi_range_handle";
-import apartamentsHandle from "./sub/apartaments_handle";
-import apartaments_style_handle from "./sub/apartaments_style_handle";
-import search_handle from "./sub/search_handle";
-import diary_handle from "./sub/diary_swiper_handle";
-import overlay_handle from "./sub/overlay_handle";
-import lightbox_handle from "./sub/lightbox_handle";
+import parallax_handle from "./handles/parallax_handle";
+import scroll_handle from "./handles/scroll_handle";
+import locations_handle from "./handles/locations_handle";
+import multi_range_handle from "./handles/multi_range_handle";
+import apartamentsHandle from "./handles/apartaments_handle";
+import apartaments_style_handle from "./handles/apartaments_style_handle";
+import search_handle from "./handles/search_handle";
+import diary_handle from "./handles/diary_swiper_handle";
+import overlay_handle from "./handles/overlay_handle";
+import lightbox_handle from "./handles/lightbox_handle";
 
-import gallery_fetch_init from "./sub/gallery_fetch_init";
-import gallery_phase_init from "./sub/gallery_phase_init";
+import gallery_fetch_init from "./inits/gallery_fetch_init";
+import gallery_phase_init from "./inits/gallery_phase_init";
 
 //Rendered
 window.addEventListener("DOMContentLoaded", () => {

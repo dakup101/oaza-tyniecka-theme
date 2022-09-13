@@ -3,7 +3,7 @@ export default function search_handle() {
 
 	console.log("--- Diary Swiper Init ---");
 
-	import(/* webpackChunkName: "print" */ "./diary_swiper_init").then(
+	import(/* webpackChunkName: "print" */ "../inits/diary_swiper_init").then(
 		(module) => {
 			const diary_swiper_init = module.default;
 			diary_swiper_init();

@@ -1,5 +1,5 @@
-import manageRange from "./multi_range_manage_range";
-import stepper from "./multi_range_stepper";
+import manageRange from "../sub/multi_range_manage_range";
+import stepper from "../sub/multi_range_stepper";
 
 export default function multiRange() {
 	let meters = {

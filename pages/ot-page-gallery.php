@@ -19,7 +19,7 @@
 
             <?php foreach($phases as $phase) : ?>
             <button data-phase="<?php echo $phase->slug ?>"
-                class="mr-5 underline <?php echo ($phase->slug) == 'etap-1' ? 'text-2xl text-yellow' : 'text-lg' ?>">
+                class="mr-5 underline <?php echo ($phase->slug) == 'etap-1' ? 'text-3xl text-yellow' : 'text-lg' ?>">
                 <?php echo $phase->name ?>
             </button>
             <?php endforeach; ?>

@@ -1,4 +1,4 @@
-import apartamentsHandle from "./apartaments_handle";
+import apartamentsHandle from "../handles/apartaments_handle";
 
 export default function change_apartaments_style() {
 	let styleChckbx = document.querySelector("[data-list_style]");

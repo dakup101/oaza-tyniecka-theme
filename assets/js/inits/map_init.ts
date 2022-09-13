@@ -1,7 +1,7 @@
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { ajaxUrl } from "../globals";
-import { manage_locations } from "../sub/locations_init";
+import { manage_locations } from "./locations_init";
 
 let tilesLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 	attribution:

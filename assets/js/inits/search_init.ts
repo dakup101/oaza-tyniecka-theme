@@ -1,5 +1,5 @@
 import { ajaxUrl, htmlLoaderString } from "../globals";
-import apartametsTablesEvents from "./apartaments_table_events";
+import apartametsTablesEvents from "../sub/apartaments_table_events";
 
 export default async function search_init() {
 	let searchBtn = document.querySelector("[data-filter]") as HTMLButtonElement;
