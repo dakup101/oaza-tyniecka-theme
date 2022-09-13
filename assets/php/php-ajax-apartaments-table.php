@@ -30,22 +30,22 @@ if (isset($_POST['minMeters'])) {
             array(
                 "key" => "apartament_meters",
                 "value" => $_POST['minMeters'],
-                "compare" => ">"
+                "compare" => ">="
             ),
             array(
                 "key" => "apartament_meters",
                 "value" => $_POST['maxMeters'],
-                "compare" => "<"
+                "compare" => "<="
             ),
             array(
                 "key" => "apartament_price",
                 "value" => $_POST['minPrice'],
-                "compare" => ">"
+                "compare" => ">="
             ),
             array(
                 "key" => "apartament_price",
                 "value" => $_POST['maxPrice'],
-                "compare" => "<"
+                "compare" => "<="
             )
         )
         );
