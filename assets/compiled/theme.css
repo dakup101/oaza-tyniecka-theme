@@ -332,6 +332,9 @@ header.scrolled nav {
 .map {
   height: 650px;
 }
+.map.contact {
+  height: 400px;
+}
 
 .map {
   z-index: 1;

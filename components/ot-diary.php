@@ -21,10 +21,17 @@ $counter = 0;
                             <?php 
                          date_default_timezone_set('Europe/Warsaw');
                          setlocale(LC_TIME, array('pl_Pl.UTF-8', 'pl.UTF-8'));
-                        echo date('d M Y', strtotime($post->post_date)) ?>
+                        echo get_the_date('d M Y', $post->ID) ?>
                         </span>
-                        <h3 class="text-xl mb-3 font-medium"><?php echo $post->post_title; ?></h3>
+                        <a href="<?php echo get_the_permalink() ?>" class=" text-xl mb-3 block font-medium
+                        hover:text-yellow transition-all">
+                            <?php echo $post->post_title; ?>
+                        </a>
                         <p><?php echo $post->post_excerpt; ?></p>
+                        <a href="<?php echo get_the_permalink() ?>" class="mt-3 underline text-yellow-dark block font-medium
+                            hover:text-yellow-dark transition-all">
+                            Czytaj więcej
+                        </a>
                     </div>
 
 
@@ -42,15 +49,17 @@ $counter = 0;
     </div>
     <div class="flex justify-start items-center">
         <div class="swiper-button-prev">
-            <svg class=" fill-dark stroke-dark h-5 rotate-180" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15"
-                fill-rule="evenodd">
-                <path d="M21.88,8l-7.53,6.24,.64,.76,9-7.52L15,0l-.65,.76,7.53,6.24H0v1H21.88Z" />
+            <svg version="1.1" class=" fill-dark stroke-dark hover:fill-yellow transition-all h-3.5 rotate-180"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 66.3 15"
+                style="enable-background:new 0 0 66.3 15;" xml:space="preserve">
+                <polygon points="59.8,3.8 53.3,0 53.3,5 0,5 0,10 53.3,10 53.3,15 59.8,11.2 66.3,7.5 " />
             </svg>
         </div>
         <div class="swiper-button-next ml-10">
-            <svg class=" fill-dark stroke-dark h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15"
-                fill-rule="evenodd">
-                <path d="M21.88,8l-7.53,6.24,.64,.76,9-7.52L15,0l-.65,.76,7.53,6.24H0v1H21.88Z" />
+            <svg version="1.1" class=" fill-dark stroke-dark hover:fill-yellow transition-all h-3.5"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 66.3 15"
+                style="enable-background:new 0 0 66.3 15;" xml:space="preserve">
+                <polygon points="59.8,3.8 53.3,0 53.3,5 0,5 0,10 53.3,10 53.3,15 59.8,11.2 66.3,7.5 " />
             </svg>
         </div>
     </div>

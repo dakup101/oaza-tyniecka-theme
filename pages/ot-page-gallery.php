@@ -45,15 +45,17 @@
                     </div>
                 </div>
                 <div class="swiper-button-prev">
-                    <svg class=" fill-dark stroke-dark h-5 rotate-180" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 15" fill-rule="evenodd">
-                        <path d="M21.88,8l-7.53,6.24,.64,.76,9-7.52L15,0l-.65,.76,7.53,6.24H0v1H21.88Z" />
+                    <svg version="1.1" class=" fill-dark hover:fill-yellow transition-all stroke-dark h-3.5 rotate-180"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 66.3 15" style="enable-background:new 0 0 66.3 15;" xml:space="preserve">
+                        <polygon points="59.8,3.8 53.3,0 53.3,5 0,5 0,10 53.3,10 53.3,15 59.8,11.2 66.3,7.5 " />
                     </svg>
                 </div>
                 <div class="swiper-button-next">
-                    <svg class=" fill-dark stroke-dark h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15"
-                        fill-rule="evenodd">
-                        <path d="M21.88,8l-7.53,6.24,.64,.76,9-7.52L15,0l-.65,.76,7.53,6.24H0v1H21.88Z" />
+                    <svg version="1.1" class=" fill-dark hover:fill-yellow transition-all stroke-dark h-3.5"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 66.3 15" style="enable-background:new 0 0 66.3 15;" xml:space="preserve">
+                        <polygon points="59.8,3.8 53.3,0 53.3,5 0,5 0,10 53.3,10 53.3,15 59.8,11.2 66.3,7.5 " />
                     </svg>
                 </div>
             </div>

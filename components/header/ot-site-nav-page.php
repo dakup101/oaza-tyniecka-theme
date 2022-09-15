@@ -5,12 +5,12 @@
             'class' => 'text-dark list-none flex'
         ) ) ?>
     </nav>
-    <figure class="col-span-2 px-10">
+    <a href="<?php echo get_home_url() ?>" class="block col-span-2 px-10">
         <img src="<?php echo THEME_IMG . '/logo_dark.svg' ?>" alt="" class="w-full">
-    </figure>
+    </a>
     <nav class="col-span-5 justify-self-start items-center mb-7 flex" aria-label="Main right">
         <?php echo get_template_part( '/components/ot-menu-items', null, array(
-            'menu'=>'primary-left',
+            'menu'=>'primary-right',
             'class' => 'text-dark list-none flex'
         ) ) ?>
         <div class="pl-5 border-l border-l-dark font-light ">

@@ -35,15 +35,3 @@ export const markerGroup = L.layerGroup().addTo(locMap);
 export const mapLoader = document.querySelector("[data-map_loader]");
 
 const data = new FormData();
-data.append("action", "fetch_locations");
-data.append("id", "54");
-
-fetch(ajaxUrl, {
-	method: "POST",
-	body: data,
-	credentials: "same-origin",
-})
-	.then((response) => response.json())
-	.then((json) => {
-		manage_locations(json);
-	});
