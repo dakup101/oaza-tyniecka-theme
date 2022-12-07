@@ -9,13 +9,13 @@ $counter = 0;
 ?>
 
 <?php if (!empty($posts)) : ?>
-<div class="swiper" data-diary>
+<div class="swiper hidden" data-diary>
     <div class="swiper-wrapper">
 
         <?php foreach($posts as $post) : ?>
         <div class="swiper-slide">
-            <article class="grid grid-cols-12 w-full gap-24">
-                <div class="col-span-5 relative">
+            <article class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-12 w-full gap-10 lg:gap-24">
+                <div class="lg:col-span-5 relative xs:order-1 order-2">
                     <div class="flex w-full h-full justify-end items-start flex-col">
                         <span class="block mb-5 font-light">
                             <?php 
@@ -30,14 +30,12 @@ $counter = 0;
                         <p><?php echo $post->post_excerpt; ?></p>
                         <a href="<?php echo get_the_permalink() ?>" class="mt-3 underline text-yellow-dark block font-medium
                             hover:text-yellow-dark transition-all">
-                            Czytaj więcej
+                            <?php echo __("Czytaj więcej", "oaza-tyniecka-theme") ?>
                         </a>
                     </div>
-
-
                 </div>
-                <div class="col-span-7">
-                    <div class="h-80 w-full relative overflow-hidden">
+                <div class="lg:col-span-7 xs:order-2 order-1">
+                    <div class="h-40 xs:h-80 w-full relative overflow-hidden">
                         <img src="<?php echo get_the_post_thumbnail_url($post) ?>" alt=""
                             class="absolute min-w-full min-h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover">
                     </div>

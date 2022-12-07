@@ -1,5 +1,12 @@
 .img-right{
-    width: calc(50% + 2rem);
+    width: calc(50%);
+    @media(max-width: 1560px){
+        width: calc(60%);
+    }
+    @media(max-width: 991px){
+        width: 100%;
+        height: 350px;
+    }
 }
 
 $space-sizes: 2rem;

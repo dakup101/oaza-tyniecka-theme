@@ -22,9 +22,9 @@ $min_price = $price[0];
 $max_price = $price[sizeof($price) - 1];
 ?>
 
-<form class="filters w-full grid grid-cols-3 gap-6 items-center align-middle" autocomplete="off">
+<form class="filters w-full grid grid-cols-1 sm:grid-cols-3 sm:gap-6 items-center align-middle" autocomplete="off">
     <div class="filters__sliders--item meters">
-        <p class="mb-3 font-bold uppercase">Metraż</p>
+        <p class="mb-3 font-bold uppercase"><?php echo __("Metraż", "oaza-tyniecka-theme") ?></p>
         <div class="filters__multi-range" data-multi_range>
             <input type="range" min="<?php echo $min_meter ?>" max="<?php echo $max_meter; ?>"
                 value="<?php echo $min_meter ?>" data-type="0" data-lower>
@@ -39,7 +39,7 @@ $max_price = $price[sizeof($price) - 1];
         </div>
     </div>
     <div class="filters__sliders--item price" data-multi_range>
-        <p class="mb-3 font-bold uppercase">Cena</p>
+        <p class="mb-3 font-bold uppercase"><?php echo __("Cena", "oaza-tyniecka-theme") ?></p>
         <div class="filters__multi-range">
             <input type="range" min="<?php echo $min_price ?>" max="<?php echo $max_price; ?>"
                 value="<?php echo $min_price ?>" step="10000" data-type="1" data-lower>
@@ -54,7 +54,8 @@ $max_price = $price[sizeof($price) - 1];
         </div>
     </div>
     <div>
-        <button class="btn-yellow  mb-2 block w-full" data-filter>Pokaż
-            domy</button>
+        <button class="btn-yellow  mb-2 block w-full" data-filter>
+            <?php echo __("Pokaż domy", "oaza-tyniecka-theme") ?>
+        </button>
     </div>
 </form>

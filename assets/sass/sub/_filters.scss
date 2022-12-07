@@ -1,6 +1,7 @@
 input[type=range] {
     box-sizing: border-box;
-    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     width: 400px;
     margin: 0;
     padding: 0 2px;
@@ -15,7 +16,8 @@ input[type=range] {
     &:focus {
         outline: none;
     }
-    &::-webkit-slider-thumb, &::-moz-range-thumb{
+    &::-webkit-slider-thumb{
+      -webkit-appearance: none;
       height: 18px;
       width: 18px;
       border-radius: 28px;
@@ -28,8 +30,25 @@ input[type=range] {
       pointer-events: all;
       transition: all .2s ease-in-out;
     }
-    &:hover::-webkit-slider-thumb, &:hover::-moz-range-thumb{
+    &::-moz-range-thumb{
+      -webkit-appearance: none;
+      height: 18px;
+      width: 18px;
+      border-radius: 28px;
+      background-color: #f1f1f1;
+      border: 2px solid #333;
+      position: relative;
+      margin: 5px 0;
+      cursor: pointer;
+      appearance: none;
+      pointer-events: all;
+      transition: all .2s ease-in-out;
+    }
+    &:hover::-webkit-slider-thumb{
         background-color: $yellow;
+    }
+    &:hover::-moz-range-thumb{
+      background-color: $yellow;
     }
 }
 .filters{
@@ -48,7 +67,11 @@ input[type=range] {
         position: absolute;
         left: 0;
         &:nth-child(1) {
-          &::-webkit-slider-thumb::before {
+          &::-webkit-slider-thumb::before{
+            background-color: #fff;
+            border: 1px solid #b8c6d1;
+          }
+          &::-moz-range-thumb {
             background-color: #fff;
             border: 1px solid #b8c6d1;
           }
@@ -56,6 +79,9 @@ input[type=range] {
         &:nth-child(2) {
           background: none;
           &::-webkit-slider-thumb::before {
+            background-color: #b8c6d1;
+          }
+          &::-moz-range-thumb {
             background-color: #b8c6d1;
           }
         }

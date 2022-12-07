@@ -1,10 +1,10 @@
-<table class="w-4/5 mx-auto" data-sort_table>
+<table class="w-full lg:w-4/5 mx-auto" data-sort_table>
     <thead class="apartaments-list">
         <tr class="border-t-2 border-b-2 border-gray">
             <th class="px-5 py-2.5">
                 <button data-sort="0"
                     class="flex items-center uppercase justify-center w-full hover:text-yellow transition-all">
-                    nr. domu
+                    <?php echo __("nr. domu", "oaza-tyniecka-theme") ?>
                     <figure class="apartament-list__sort ml-2">
                         <svg data-sort_icon class="w-4 h-4 fill-gray" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 29">
@@ -17,7 +17,7 @@
             <th class="px-5 py-2.5">
                 <button data-sort="1"
                     class="flex items-center uppercase justify-center w-full hover:text-yellow transition-all">
-                    metraz
+                    <?php echo __("metraż", "oaza-tyniecka-theme") ?>
                     <figure class="apartament-list__sort ml-2">
                         <svg data-sort_icon class="w-4 h-4 fill-gray" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 29">
@@ -30,7 +30,7 @@
             <th class="px-5 py-2.5">
                 <button data-sort="2"
                     class="flex items-center uppercase justify-center w-full hover:text-yellow transition-all">
-                    pokoje
+                    <?php echo __("pokoje", "oaza-tyniecka-theme") ?>
                     <figure class="apartament-list__sort ml-2">
                         <svg data-sort_icon class="w-4 h-4 fill-gray" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 29">
@@ -43,7 +43,7 @@
             <th class="px-5 py-2.5">
                 <button data-sort="3"
                     class="flex items-center uppercase justify-center w-full hover:text-yellow transition-all">
-                    ogród
+                    <?php echo __("ogród", "oaza-tyniecka-theme") ?>
                     <figure class="apartament-list__sort ml-2">
                         <svg data-sort_icon class="w-4 h-4 fill-gray" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 29">
@@ -56,7 +56,7 @@
             <th class="px-5 py-2.5">
                 <button data-sort="4"
                     class="flex items-center uppercase justify-center w-full hover:text-yellow transition-all">
-                    status
+                    <?php echo __("status", "oaza-tyniecka-theme") ?>
                     <figure class="apartament-list__sort ml-2">
                         <svg data-sort_icon class="w-4 h-4 fill-gray" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 29">
@@ -69,7 +69,7 @@
             <th class="px-5 py-2.5">
                 <button data-sort="5"
                     class="flex items-center uppercase justify-center w-full hover:text-yellow transition-all">
-                    cena
+                    <?php echo __("cena", "oaza-tyniecka-theme") ?>
                     <figure class="apartament-list__sort ml-2">
                         <svg data-sort_icon class="w-4 h-4 fill-gray" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 29">
@@ -81,7 +81,7 @@
             </th>
             <th class="px-5 py-2.5">
                 <span class="flex items-center uppercase justify-center w-full">
-                    Zobacz dom
+                    <?php echo __("Zobacz dom", "oaza-tyniecka-theme") ?>
                 </span>
             </th>
         </tr>

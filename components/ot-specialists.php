@@ -1,8 +1,7 @@
 <?php $args = wp_parse_args($args, array()); ?>
-<div class="grid grid-cols-3 gap-20 px-32">
+<div class="grid sm:grid-cols-3 gap-10 sm:gap-20 sm:px-10 md:px-32">
     <?php foreach ($args as $el) : ?>
     <div class="bg-gray-light">
-        <img src="<?php echo $el['zdjecie'] ?>" alt="<?php echo $el['name'] ?>" class="w-full">
         <div class="px-10 py-5">
             <p class="font-bold text-lg"><?php echo $el['name'] ?></p>
             <p class="text-sm"><?php echo $el['pos'] ?></p>

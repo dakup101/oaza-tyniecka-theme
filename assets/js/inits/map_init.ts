@@ -14,11 +14,11 @@ export const locMap = L.map("map", {
 	maxZoom: 18,
 	minZoom: 12,
 	scrollWheelZoom: false,
-}).setView([50.06465, 19.94552], 13);
+}).setView([50.05187, 19.89938], 13);
 
 export const locationIcon = L.icon({
 	iconUrl:
-		"https://oaza.local/wp-content/themes/oaza-tyniecka-theme/assets/img/yellow_pin.svg",
+		"http://oaza-tyniecka.everywhere.pl//wp-content/themes/oaza-tyniecka-theme/assets/img/yellow_pin.svg",
 	iconSize: [35, 52.5],
 	iconAnchor: [17.5, 52],
 	popupAnchor: [0, -30],
@@ -26,7 +26,7 @@ export const locationIcon = L.icon({
 
 export const mainLocIcon = L.icon({
 	iconUrl:
-		"https://oaza.local/wp-content/themes/oaza-tyniecka-theme/assets/img/oaza-mapa.svg",
+		"http://oaza-tyniecka.everywhere.pl//wp-content/themes/oaza-tyniecka-theme/assets/img/oaza-mapa.svg",
 	iconSize: [50, 50],
 	iconAnchor: [25, 25],
 });

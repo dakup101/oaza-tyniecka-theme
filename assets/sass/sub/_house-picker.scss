@@ -1,0 +1,147 @@
+.house-picker{
+    position: absolute;
+    opacity: .55;
+    transition: all .2s ease-in-out;
+    &__1{
+        width: 5.2%;
+        top: 5.4%;
+        left: 27%;
+    }
+    &__2{
+        width: 5.8%;
+        top: 8%;
+        left: 30%;
+    }
+    &__3{
+        width: 6.2%;
+        top: 10.8%;
+        left: 34.55%;
+    }
+    &__4{
+        width: 7.2%;
+        top: 15.5%;
+        left: 38.2%;
+    }
+    &__5{
+        width: 7%;
+        top: 19.3%;
+        left: 43.6%;
+    }
+    &__6{
+        width: 6.8%;
+        top: 23%;
+        left: 48.9%;
+    }
+    &__7{
+        width: 7.35%;
+        top: 27%;
+        left: 54.6%;
+    }
+    &__8{
+        width: 8.35%;
+        top: 32.5%;
+        left: 60.6%;
+    }
+    &__9{
+        width: 7%;
+        top: 14.6%;
+        left: 13.6%;
+    }
+    &__10{
+        width: 6.6%;
+        top: 17.6%;
+        left: 16.6%;
+    }
+    &__11{
+        width: 8%;
+        top: 21.6%;
+        left: 21.1%;
+    }
+    &__12{
+        width: 7.4%;
+        top: 26.5%;
+        left: 25.4%;
+    }
+    &__13{
+        width: 7.4%;
+        top: 32.5%;
+        left: 31%;
+    }
+    &__14{
+        width: 7.55%;
+        top: 35.5%;
+        left: 35.5%;
+    }
+    &__15{
+        width: 8.7%;
+        top: 41%;
+        left: 41.5%;
+    }
+    &__16{
+        width: 9.9%;
+        top: 46.3%;
+        left: 47.3%;
+    }
+    &__17{
+        width: 11.3%;
+        top: 64.3%;
+        left: 61.7%;
+        z-index: 50;
+    }
+    &__18{
+        width: 10.5%;
+        top: 56.3%;
+        left: 67%;
+        z-index: 40;
+    }
+    &__19{
+        width: 9.5%;
+        top: 47.5%;
+        left: 74.2%;
+        z-index: 30;
+    }
+    &__20{
+        width: 8.8%;
+        top: 43.8%;
+        left: 77.5%;
+        z-index: 20;
+    }
+    &:hover{
+        opacity: .8;
+        -webkit-filter: drop-shadow(1px 1px 0 black) 
+        drop-shadow(-1px -1px 0 white);
+filter:drop-shadow(1px 1px 0 black) 
+drop-shadow(-1px -1px 0 white);
+        cursor: pointer;
+    }
+}
+
+.house-picker__info-card{
+    opacity: 0;
+    padding: .5rem;
+    border-radius: .25rem;
+    background: #fff;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+    z-index: 60;
+    height: fit-content;
+    &.showing{
+        opacity: 1;
+    }
+    &.hiding{
+        opacity: 0;
+        pointer-events: none;
+    }
+    &:after {
+        content:'';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-top: solid 15px #fff;
+        border-left: solid 15px transparent;
+        border-right: solid 15px transparent;
+    }
+}

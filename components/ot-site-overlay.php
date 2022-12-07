@@ -24,5 +24,8 @@
         <div class="lightbox__popup--content">
             <img src="" alt="" data-lightbox_image class="w-full">
         </div>
+        <div class="lightbox__desc">
+
+        </div>
     </div>
 </div>

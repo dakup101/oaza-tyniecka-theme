@@ -28,19 +28,21 @@ module.exports = {
             'red' : '#f84444'
         },
         screens: {
-            sm: '700px',
-            md: '1000px',
-            lg: '1300px',
+            xs: '768px',
+            sm: '991px',
+            md: '1240px',
+            lg: '1440px',
             xl: '1600px',
             '2xl': '1800px'
         },
         container: {
             padding: '1rem',
             screens: {
-                sm: '768px',
-                md: '991px',
-                lg: '1240px',
-                xl: '1440px',
+                xs: '786px',
+                sm: '991px',
+                md: '1100px',
+                lg: '1300px',
+                xl: '1560px',
                 '2xl': '1720px'
             }
         }

@@ -57,7 +57,7 @@ $apartaments = get_posts($args);
 
 <?php if (!empty($apartaments)) : ?>
 
-<div class="grid grid-cols-4 gap-10">
+<div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
     <?php foreach ($apartaments as $el) : ?>
     <div class="border border-gray">
         <a href="<?php echo get_field('rzut_pdf', $el->ID) ?>" target="_blank"
@@ -66,22 +66,28 @@ $apartaments = get_posts($args);
         </a>
         <div class="grid grid-cols-2 px-5 pt-5 gap-5">
             <figure class="flex items-center justify-center">
-                <img class="h-8" src="<?php echo THEME_IMG . 'rooms.svg' ?>" alt="">
+                <img class="h-6" src="<?php echo THEME_IMG . 'rooms.svg' ?>" alt="">
                 <div class="flex flex-col ml-5">
-                    <p class="uppercase">Metraż</p>
+                    <p class="uppercase">
+                        <?php echo __("Metraż", "oaza-tyniecka-theme"); ?>
+                    </p>
                     <p class="font-bold text-lg"><?php echo get_field('apartament', $el->ID)['meters'] ?> m²</p>
                 </div>
             </figure>
             <figure class="flex items-center justify-center">
-                <img class="h-8" src="<?php echo THEME_IMG . 'meters.svg' ?>" alt="">
+                <img class="h-6" src="<?php echo THEME_IMG . 'meters.svg' ?>" alt="">
                 <div class="flex flex-col ml-5">
-                    <p class="uppercase">Pokoje</p>
+                    <p class="uppercase">
+                        <?php echo __("Pokoje", "oaza-tyniecka-theme") ?>
+                    </p>
                     <p class="font-bold text-lg"><?php echo get_field('apartament', $el->ID)['rooms'] ?></p>
                 </div>
             </figure>
         </div>
         <div class="p-5">
-            <a class="w-full btn-card" href="<?php echo get_field('rzut_pdf', $el->ID) ?>" target="_blank">Zobacz</a>
+            <a class="w-full btn-card" href="<?php echo get_field('rzut_pdf', $el->ID) ?>" target="_blank">
+                <?php echo __("Zobacz", "oaza-tyniecka-theme") ?>
+            </a>
         </div>
     </div>
     <?php endforeach; ?>
@@ -90,10 +96,10 @@ $apartaments = get_posts($args);
 <?php else : ?>
 
 <div class="pt-10 text-center text-2xl font-bold mb-1">
-    Brak wyników wyszukania
+    <?php echo __("Brak wyników wyszukania", "oaza-tyniecka-theme"); ?>
 </div>
 <div class="text-lg pb-10 text-center">
-    spróbuj z innymi ustawieniami filtra
+    <?php echo __("spróbuj z innymi ustawieniami filtra", "oaza-tyniecka-theme"); ?>
 </div>
 <?php endif; ?>
 <?php return ob_get_clean(); 

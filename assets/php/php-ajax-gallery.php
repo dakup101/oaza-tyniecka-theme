@@ -48,10 +48,10 @@ $images = get_posts($args);
 <?php else : ?>
 <div class="col-span-3">
     <div class="pt-10 text-center text-2xl font-bold mb-1">
-        Brak zdjęć na tym stanie / etapie
+        <?php echo __("Brak zdjęć na tym stanie / etapie", "oaza-tyniecka-theme") ?>
     </div>
     <div class="text-lg pb-10 text-center">
-        Sprawdź pozostałe stany / etapy
+        <?php echo __("Sprawdź pozostałe stany / etapy", "oaza-tyniecka-theme"); ?>
     </div>
 </div>
 <?php endif; ?>

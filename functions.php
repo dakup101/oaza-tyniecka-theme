@@ -53,4 +53,7 @@ function theme_functions(){
 	// AJAX fetch gallery images
 	// Gallery Images template
 	require THEME_FUN . '/php-ajax-gallery.php';
+	// AJAX fetch house info card
+	// House info card template
+	require THEME_FUN . '/php-ajax-house-info.php';
 }
