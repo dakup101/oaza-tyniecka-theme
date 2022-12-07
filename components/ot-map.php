@@ -1,6 +1,10 @@
-<div class="px-20 mb-16">
-    <h2 class="text-7xl font-bold">Lokalizacja</h2>
-    <div class="text-4xl">Oaza Tyniecka daje wytchnienie od miejskiego zgiełku</div>
+<div class="mb-16">
+    <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold">
+        <?php echo __("Lokalizacja", "oaza-tyniecka-theme"); ?>
+    </h2>
+    <div class="text-2xl sm:text-3xl lg:text-4xl">
+        <?php echo __("Oaza Tyniecka daje wytchnienie od miejskiego zgiełku", "oaza-tyniecka-theme"); ?>
+    </div>
 </div>
 
 <?php
@@ -15,7 +19,7 @@ $counter = 0;
 
 ?>
 
-<div class="grid grid-cols-6 gap-5 mb-10">
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-5 mb-10 items-start">
     <?php $loop = new WP_Query( $args ); ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     <a href="#"

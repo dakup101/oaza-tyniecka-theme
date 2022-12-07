@@ -37,6 +37,30 @@
         focus:text-yellow-darker
         transition-all;
     }
+    .btn-card{
+        @apply
+        block
+        w-fit
+        rounded-full
+        px-10 py-4
+        font-bold
+        text-center
+        border-2
+        border-dark
+        text-dark
+        bg-white
+        uppercase
+        text-sm
+        hover:bg-yellow-dark
+        hover:border-yellow-dark
+        hover:-translate-y-1
+        focus:translate-y-0
+        hover:shadow-md
+        focus:shadow-none
+        focus:bg-yellow
+        focus:text-yellow-darker
+        transition-all;
+    }
     .active-location{
         @apply
         text-yellow;

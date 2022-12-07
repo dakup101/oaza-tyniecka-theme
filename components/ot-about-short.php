@@ -1,16 +1,16 @@
-<div class="grid grid-cols-2">
+<div class="grid gap-5 xs:grid-cols-2">
     <div>
-        <h2 class="text-7xl font-bold">Nasza inwestycja</h2>
-        <span class="block text-4xl">Poznaj więcej detali</span>
+        <h2 class="text-4xl sm:text-5xl lg:text-7xl font-bold">
+            <?php echo __("Nasza inwestycja", "oaza-tyniecka-theme") ?>
+        </h2>
+        <span class="block text-2xl sm:text-3xl lg:text-4xl">
+            <?php echo __("Poznaj więcej detali", "oaza-tyniecka-theme") ?>
+        </span>
     </div>
     <div>
-        <p>Oaza Mokotów to kameralna inwestycja apartamentowa, zaprojektowana z myślą o potrzebach najbardziej
-            wymagających klientów. Położona jest przy ul. Piaseczyńskiej 41 na Mokotowie w bezpośrednim sąsiedztwie
-            Klubu Sportowego Warszawianka.</p>
-        <p class="mt-5">Trzypiętrowy kompleks, który przylega do przepięknej skarpy warszawskiej, pomieści 69
-            słonecznych i
-            komfortowych apartamentów na sprzedaż o powierzchni od 47 do 145 m². Lokale posiadają duże balkony, a na
-            parterach również prywatne tarasy.</p>
-        <a href="<?php echo get_home_url() ?>" class="btn-yellow mt-5">Czytaj więcej</a>
+        <?php echo get_field("about_short_desc"); ?>
+        <a href="https://oaza.local/o-inwestycji/" class="btn-yellow mt-5">
+            <?php echo __("Czytaj więcej", "oaza-tyniecka-theme"); ?>
+        </a>
     </div>
 </div>

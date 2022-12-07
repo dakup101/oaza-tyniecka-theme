@@ -1,32 +1,12 @@
-<?php get_header(); ?>
-<main>
-    <!-- Hero -->
-    <section>
-        <?php get_template_part( '/components/ot', 'home-hero' ) ?>
-    </section>
-    <!-- About -->
-    <section class="container mx-auto py-10 mt-10">
-        <?php get_template_part( '/components/ot', 'about-short' ) ?>
-    </section>
-    <section class="container mx-auto py-10 mt-10">
-        <h2 class="text-4xl text-center mb-10">Jest wiele powodów dla których warto zamieszkać w Oazie Tynieckiej</h2>
-        <div class="grid grid-cols-6">
-            <?php get_template_part( '/components/ot', 'yellow-icons' ) ?>
-        </div>
-    </section>
-    <section class="overflow-hidden mt-20">
-        <div class="container pb-10 mx-auto">
-            <?php get_template_part( '/components/ot', 'right-img-section' ) ?>
-        </div>
-    </section>
-    <section class="container  mt-20 mx-auto">
-        <?php get_template_part( '/components/ot', 'map' ) ?>
-    </section>
-    <section class="container mx-auto py-10 mt-10">
-        <h2 class="text-4xl font-bold text-center mb-14">Wszędzie blisko</h2>
-        <div class="grid grid-cols-6">
-            <?php get_template_part( '/components/ot', 'path-icons' ) ?>
-        </div>
+<?php get_header('page'); ?>
+
+<main class="mt-32 py-20">
+    <section class="container mx-auto">
+        <h1
+            class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold relative before:absolute before:h-0.5 before:w-3/5 before:bg-dark w-fit before:-bottom-12 mb-20">
+            404: <?php echo __("Nie znaleziono", "oaza-tyniecka-theme") ?>
+        </h1>
     </section>
 </main>
+
 <?php get_footer(); ?>
