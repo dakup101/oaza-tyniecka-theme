@@ -7,7 +7,9 @@
             <rect x=".64" y="10.64" width="6" height="6" />
             <rect x="10.64" y="10.64" width="6" height="6" />
         </svg>
-        <span>Rzuty</span>
+        <span>
+            <?php echo __("Rzuty", "oaza-tyniecka-theme"); ?>
+        </span>
     </figure>
     <form autocomplete="off" class="mx-5 block">
         <label for="listStyle" class="ot-toggle ">
@@ -28,6 +30,8 @@
                 <rect x="4.15" y="13" width="21" height="3" />
             </g>
         </svg>
-        <span>Lista</span>
+        <span>
+            <?php echo __("Lista", "oaza-tyniecka-theme") ?>
+        </span>
     </figure>
 </div>

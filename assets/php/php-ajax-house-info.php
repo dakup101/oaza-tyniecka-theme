@@ -41,10 +41,10 @@ function apartaments_house_info($tile_id) {
 <div class="mb-1 text-sm"><?php echo __("Status", "oaza-tyniecka-theme"); ?>:
     <strong>
         <?php
-		$status = get_field('apartament', $id)['status'] ;
-	if ($status == "avaliable") echo "Dostępne";
-	else if ($status == "reserved") echo "Rezerwacja";
-	else echo "Sprzedane"
+		$status = get_field('apartament', $item->ID)['status'] ;
+		if ($status == "avaliable") echo __("Dostępne", "oaza-tyniecka-theme"); 
+			else if ($status == "reserved") echo __("Rezerwacja", "oaza-tyniecka-theme");
+				else echo __("Sprzedane", "oaza-tyniecka-theme");
 		?>
     </strong>
 </div>

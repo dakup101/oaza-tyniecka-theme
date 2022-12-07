@@ -138,7 +138,7 @@ if (!empty($apartaments)) :
                 </th>
                 <th class="px-5 py-2.5">
                     <span class="flex items-center uppercase justify-center w-full">
-                        <?php echo ("Zobacz dom"); ?>
+                        <?php echo __("Zobacz dom", "oaza-tyniecka-theme"); ?>
                     </span>
                 </th>
             </tr>
@@ -166,7 +166,7 @@ if (!empty($apartaments)) :
 					$status = get_field('apartament', $item->ID)['status'] ;
 					if ($status == "avaliable") echo __("Dostępne", "oaza-tyniecka-theme"); 
 						else if ($status == "reserved") echo __("Rezerwacja", "oaza-tyniecka-theme");
-							else echo __("Sprzedane", "oaza-tyniecka-theme"); ?>
+							else echo __("Sprzedane", "oaza-tyniecka-theme");
                     ?>
                 </td>
                 <td class="text-center px-5 py-2.5 font-bold">

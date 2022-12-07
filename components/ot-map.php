@@ -1,6 +1,10 @@
 <div class="mb-16">
-    <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold">Lokalizacja</h2>
-    <div class="text-2xl sm:text-3xl lg:text-4xl">Oaza Tyniecka daje wytchnienie od miejskiego zgiełku</div>
+    <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold">
+        <?php echo __("Lokalizacja", "oaza-tyniecka-theme"); ?>
+    </h2>
+    <div class="text-2xl sm:text-3xl lg:text-4xl">
+        <?php echo __("Oaza Tyniecka daje wytchnienie od miejskiego zgiełku", "oaza-tyniecka-theme"); ?>
+    </div>
 </div>
 
 <?php
