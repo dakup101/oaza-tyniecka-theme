@@ -341,3 +341,9 @@ a.change-fill-black{
         }
     }
 }
+.wpml-ls-link::before{
+    content: none;
+}
+.wpml-ls-link img{
+    height: 12px !important;
+}

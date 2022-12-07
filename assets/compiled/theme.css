@@ -770,4 +770,12 @@ a.change-fill-black:hover svg {
   stroke: #212121 !important;
 }
 
+.wpml-ls-link::before {
+  content: none;
+}
+
+.wpml-ls-link img {
+  height: 12px !important;
+}
+
 /*# sourceMappingURL=theme.css.map */

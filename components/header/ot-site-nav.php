@@ -56,7 +56,9 @@
                 <span class="ml-3 block lg:hidden"><?php echo __("Zadzwoń", "oaza-tyniecka-theme") ?></span>
 
             </a>
+
         </div>
+        <?php echo do_shortcode("[wpml_language_switcher]") ?>
     </nav>
 
     <nav data-nav_mobile class="w-full flex flex-col mobile-nav">
