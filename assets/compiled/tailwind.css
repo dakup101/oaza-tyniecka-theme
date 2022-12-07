@@ -693,20 +693,16 @@ video {
   left: 50%;
 }
 
+.top-4 {
+  top: 1rem;
+}
+
 .left-5 {
   left: 1.25rem;
 }
 
 .-right-1\/2 {
   right: -50%;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .z-20 {
@@ -721,17 +717,16 @@ video {
   z-index: 30;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
 
 .col-span-2 {
   grid-column: span 2 / span 2;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .my-14 {
@@ -744,16 +739,17 @@ video {
   margin-bottom: 7rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .mt-5 {
@@ -772,6 +768,14 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -784,20 +788,12 @@ video {
   margin-bottom: 6rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mb-14 {
@@ -820,10 +816,6 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
@@ -840,28 +832,16 @@ video {
   height: auto;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-5\/6 {
   height: 83.333333%;
 }
 
 .h-14 {
   height: 3.5rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-24 {
-  height: 6rem;
 }
 
 .min-h-full {
@@ -872,16 +852,26 @@ video {
   width: 100%;
 }
 
-.w-auto {
-  width: auto;
-}
-
 .w-5 {
   width: 1.25rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-16 {
   width: 4rem;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-1\/4 {
@@ -890,16 +880,6 @@ video {
 
 .w-6\/12 {
   width: 50%;
-}
-
-.w-14 {
-  width: 3.5rem;
-}
-
-.w-fit {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .min-w-full {
@@ -915,16 +895,16 @@ video {
   list-style-type: none;
 }
 
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -984,6 +964,20 @@ video {
   border-left-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-white\/70 {
+  background-color: rgb(255 255 255 / 0.7);
+}
+
+.bg-yellow-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 243 165 / var(--tw-bg-opacity));
+}
+
+.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 232 76 / var(--tw-bg-opacity));
+}
+
 .bg-red {
   --tw-bg-opacity: 1;
   background-color: rgb(248 68 68 / var(--tw-bg-opacity));
@@ -1004,38 +998,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-yellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 232 76 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 243 165 / var(--tw-bg-opacity));
-}
-
-.bg-white\/30 {
-  background-color: rgb(255 255 255 / 0.3);
-}
-
-.bg-white\/60 {
-  background-color: rgb(255 255 255 / 0.6);
-}
-
-.bg-white\/70 {
-  background-color: rgb(255 255 255 / 0.7);
-}
-
 .fill-current {
   fill: currentColor;
 }
 
 .fill-yellow {
   fill: #e4e84c;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .p-2 {
@@ -1046,39 +1014,8 @@ video {
   padding: 1.5rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.p-20 {
+  padding: 5rem;
 }
 
 .py-5 {
@@ -1091,26 +1028,61 @@ video {
   padding-right: 2.5rem;
 }
 
-.pb-10 {
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pl-5 {
   padding-left: 1.25rem;
 }
 
-.text-center {
-  text-align: center;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-center {
+  text-align: center;
 }
 
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-9xl {
@@ -1138,12 +1110,12 @@ video {
   line-height: 1;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-light {
   font-weight: 300;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-white {
@@ -1160,16 +1132,16 @@ video {
   opacity: 0;
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
