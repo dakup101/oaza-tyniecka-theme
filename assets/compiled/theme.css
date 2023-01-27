@@ -319,8 +319,15 @@ input[type=range]:hover::-moz-range-thumb {
 
 .house-picker {
   position: absolute;
-  opacity: 0.55;
   transition: all 0.2s ease-in-out;
+}
+.house-picker > svg {
+  width: 100% !important;
+  height: auto !important;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  stroke: 1px solid white;
+  pointer-events: none;
 }
 .house-picker__1 {
   width: 5.2%;
@@ -427,10 +434,10 @@ input[type=range]:hover::-moz-range-thumb {
   z-index: 20;
 }
 .house-picker:hover {
-  opacity: 0.8;
-  -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 white);
-  filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 white);
   cursor: pointer;
+}
+.house-picker:hover > svg {
+  opacity: 0.75;
 }
 
 .house-picker__info-card {

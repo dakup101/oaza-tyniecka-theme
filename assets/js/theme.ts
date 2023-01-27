@@ -106,6 +106,7 @@ function gallery_cats_swiper_init() {
 
 function houseInfos() {
 	let houseTriggers = document.querySelectorAll("[data-house_info]");
+	console.log(houseTriggers);
 	if (!houseTriggers) return;
 
 	Array.from(houseTriggers).forEach((el) => {
@@ -115,7 +116,6 @@ function houseInfos() {
 				pageX = ev.pageX,
 				pageY = ev.pageY - 45,
 				activeCards = document.querySelectorAll(".house-picker__info-card");
-
 			Array.from(activeCards).forEach((card) => {
 				cardHide(card);
 			});
@@ -168,4 +168,5 @@ async function fetchHouseInfo(tileId, card, pageX, pageY) {
 	card.innerHTML = htmlHouseInfo as string;
 	card.style.left = pageX + "px";
 	card.style.top = pageY + "px";
+	console.log(card);
 }

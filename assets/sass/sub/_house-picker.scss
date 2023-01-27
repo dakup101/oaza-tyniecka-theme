@@ -1,7 +1,14 @@
 .house-picker{
     position: absolute;
-    opacity: .55;
     transition: all .2s ease-in-out;
+    & > svg{
+        width: 100% !important; 
+        height: auto !important;
+        opacity: 0;
+        transition: all .2s ease-in-out;
+        stroke: 1px solid white;
+        pointer-events: none;
+    }
     &__1{
         width: 5.2%;
         top: 5.4%;
@@ -107,12 +114,10 @@
         z-index: 20;
     }
     &:hover{
-        opacity: .8;
-        -webkit-filter: drop-shadow(1px 1px 0 black) 
-        drop-shadow(-1px -1px 0 white);
-filter:drop-shadow(1px 1px 0 black) 
-drop-shadow(-1px -1px 0 white);
         cursor: pointer;
+        & > svg{
+            opacity: .75;
+        }
     }
 }
 
