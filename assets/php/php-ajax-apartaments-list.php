@@ -60,13 +60,18 @@ $apartaments = get_posts($args);
 <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10">
     <?php foreach ($apartaments as $el) : ?>
     <div class="border border-gray">
-        <a href="<?php echo get_field('rzut_pdf', $el->ID) ?>" target="_blank"
-            class="block w-full relative after:absolute after:w-full after:top-0 after:transition-all after:left-0 after:h-full after:bg-yellow after:opacity-0 hover:after:opacity-30">
-            <img class="w-full" src="<?php echo get_field('preview', $el->ID) ?>" alt="<?php echo $el->post_title; ?>">
+        <a href="<?php echo get_field('rzut_pdf', $el->ID) ?>"
+           target="_blank"
+           class="block w-full relative after:absolute after:w-full after:top-0 after:transition-all after:left-0 after:h-full after:bg-yellow after:opacity-0 hover:after:opacity-30">
+            <img class="w-full"
+                 src="<?php echo get_field('preview', $el->ID) ?>"
+                 alt="<?php echo $el->post_title; ?>">
         </a>
         <div class="grid grid-cols-2 px-5 pt-5 gap-5">
             <figure class="flex items-center justify-center">
-                <img class="h-6" src="<?php echo THEME_IMG . 'rooms.svg' ?>" alt="">
+                <img class="h-6"
+                     src="<?php echo THEME_IMG . 'rooms.svg' ?>"
+                     alt="">
                 <div class="flex flex-col ml-5">
                     <p class="uppercase">
                         <?php echo __("Metraż", "oaza-tyniecka-theme"); ?>
@@ -75,7 +80,9 @@ $apartaments = get_posts($args);
                 </div>
             </figure>
             <figure class="flex items-center justify-center">
-                <img class="h-6" src="<?php echo THEME_IMG . 'meters.svg' ?>" alt="">
+                <img class="h-6"
+                     src="<?php echo THEME_IMG . 'meters.svg' ?>"
+                     alt="">
                 <div class="flex flex-col ml-5">
                     <p class="uppercase">
                         <?php echo __("Pokoje", "oaza-tyniecka-theme") ?>
@@ -85,7 +92,9 @@ $apartaments = get_posts($args);
             </figure>
         </div>
         <div class="p-5">
-            <a class="w-full btn-card" href="<?php echo get_field('rzut_pdf', $el->ID) ?>" target="_blank">
+            <a class="w-full btn-card"
+               href="<?php echo get_field('rzut_pdf', $el->ID) ?>"
+               target="_blank">
                 <?php echo __("Zobacz", "oaza-tyniecka-theme") ?>
             </a>
         </div>

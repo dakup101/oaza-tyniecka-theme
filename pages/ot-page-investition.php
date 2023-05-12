@@ -51,7 +51,9 @@ $recommended = get_field('recommended_decor');
     <section class="relative mt-20">
         <div class="grid grid-cols-1 sm:grid-cols-12">
             <div class="sm:col-span-5 sm:order-1 order-2 flex items-end">
-                <img src="<?php echo THEME_IMG . 'contact.jpg' ?>" alt="" class="w-full">
+                <img src="<?php echo THEME_IMG . 'contact.jpg' ?>"
+                     alt=""
+                     class="w-full">
             </div>
             <div class="px-4 sm:px-0 sm:col-span-6 sm:order-2 order-1">
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-5">

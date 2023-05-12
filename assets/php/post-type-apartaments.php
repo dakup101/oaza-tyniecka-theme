@@ -30,21 +30,19 @@ function post_type_apartaments() {
         'public'              => true,
         'show_ui'             => true,
         'show_in_menu'        => true,
-        'show_in_nav_menus'   => false,
-        'show_in_admin_bar'   => false,
+        'show_in_nav_menus'   => true,
+        'show_in_admin_bar'   => true,
         'menu_position'       => 5,
         'can_export'          => true,
         'exclude_from_search' => true,
-        'publicly_queryable'  => false,
+        'publicly_queryable'  => true,
         'show_in_rest'        => true,
         'menu_icon'           => 'dashicons-admin-home',
-
+        'rewrite'             => array( 'slug' => 'dom' ), // Corrected line
         // This is where we add taxonomies to our CPT
         'taxonomies'          => array( 'building' ),
     );
-
     // Registering your Custom Post Type
     register_post_type( 'apartaments', $args );
 
 }
-
